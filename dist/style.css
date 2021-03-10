@@ -1,0 +1,51 @@
+#app-container {
+  height: 100vh;
+  min-height: 100%;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+#quote-box {
+  width: 60%;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s;
+  font-family: Verdana;
+}
+#quote-box #text {
+  margin: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Palanquin Dark", sans-serif;
+}
+#quote-box #author {
+  margin: 20px;
+  text-align: right;
+}
+#quote-box #interaction-area {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+#quote-box #interaction-area #tweet-quote, #quote-box #interaction-area #instagram {
+  margin: 10px 0px 10px 10px;
+  transition: background-color 0.2s ease;
+  user-select: none;
+  padding: 0.625rem 1.5rem 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+#quote-box #interaction-area button {
+  margin: 10px;
+  margin-left: auto;
+  transition: background-color 0.2s ease;
+  color: white;
+}
